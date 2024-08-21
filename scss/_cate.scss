@@ -1,0 +1,34 @@
+.pagination {
+    flex-wrap: wrap;
+    &-item {
+        margin-right: 8px;
+        margin-bottom: 8px;
+        border-radius: 3px;
+        border: 1px solid #e2e2e2;
+        background-color: #DFDFDF;
+        transition: all 0.2s;
+        &:hover {
+            background-color: #284FA7;
+            color: #fff;
+
+            .pagination-link {
+                color: #fff;
+            }
+        }
+        &.active {
+            background-color: #284FA7;
+            color: #fff;
+        }
+    }
+    &-link {
+        padding: 10px 15px;
+        display: inline-block;
+    }
+}
+
+
+.cate-2-secondary {
+    .articles {
+        max-width: 790px;
+    }
+}

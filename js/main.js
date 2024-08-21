@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const backTop = document.querySelector("#back-top");
     // slide
     const twoSlidesTwoRow = document.querySelectorAll(".js__twoSlidesTwoRowContainer");
+    const threeSlidesCenter = document.querySelectorAll(".js__threeSlidesContainer");
 
     const stickyHeaderPC = document.querySelector(".js__stickyHeader");
     const video169s = document.querySelectorAll(".js__video169");
@@ -106,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Khởi tạo slider với một 2 item 2 hàng
+    // Khởi tạo slider với 2 item 2 hàng
     function initSliderTwoItemsTwoRow() {
         if (twoSlidesTwoRow) {
             twoSlidesTwoRow.forEach((item) => {
@@ -129,6 +130,47 @@ document.addEventListener("DOMContentLoaded", function () {
                     pagination: {
                         el: pagi || null,
                         clickable: true,
+                    },
+                });
+            });
+        }
+    }
+    // Khởi tạo slider với 3 item center
+    function initSliderThreeItems() {
+        if (threeSlidesCenter) {
+            threeSlidesCenter.forEach((item) => {
+                var slider = item.querySelector(".js__threeSlide");
+                var next = item.querySelector(".swiper-button-next");
+                var prev = item.querySelector(".swiper-button-prev");
+                var pagi = item.querySelector(".swiper-pagination");
+
+                new Swiper(slider, {
+                    slidesPerView: 1,
+                    // centeredSlides: true,
+                    loop: true,
+                    spaceBetween: 10,
+                    navigation: {
+                        nextEl: next || null,
+                        prevEl: prev || null,
+                    },
+                    pagination: {
+                        el: pagi || null,
+                        clickable: true,
+                    },
+                    breakpoints: {
+                        480: {
+                            slidesPerView: 1,
+                        },
+                        640: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 2,
+                        },
+                        1536: {
+                            slidesPerView: 3.5,
+                        },
+
                     },
                 });
             });
@@ -175,6 +217,7 @@ document.addEventListener("DOMContentLoaded", function () {
         initStickyContent();
         // slide
         initSliderTwoItemsTwoRow();
+        initSliderThreeItems();
         // scroll
         handleWindowScroll();
     }
