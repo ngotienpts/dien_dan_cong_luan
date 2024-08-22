@@ -13,6 +13,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const dropdownSubMenu = document.querySelectorAll(".js__dropDown");
     const subMenu = document.querySelector(".js__clickShowSubMenu");
 
+    // popup
+    const popupOne = document.querySelector('.js__popUpOne')
+    const popupOneItems = document.querySelectorAll('.js__showPopupOne')
 
     // sticky
     const stickyContainers = document.querySelectorAll('.js__stickyContainer')
@@ -27,6 +30,44 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
     }
+
+    // Xử lý sự kiện để show pop one
+    function handleShowPopupOne() {
+        if (!popupOne || !popupOneItems) return;
+
+        var closePopupOne = popupOne.querySelector(".js__closePopUp");
+        var setTitle = popupOne.querySelector(".js__titlePopUpOne");
+        var setSubTitle = popupOne.querySelector(".js__subTitlePopUpOne");
+        var setDes = popupOne.querySelector(".js__descriptionPopUpOne");
+        var overlayPopup = popupOne.querySelector(".js__overlay");
+        popupOneItems.forEach((popupOneItem) => {
+            var getTitle = popupOneItem.querySelector(".js__getTitle");
+            var getSubTitle = popupOneItem.querySelector(".js__getSubTitle");
+            var getDes = popupOneItem.querySelector(".js__getDescription");
+            popupOneItem.onclick = function () {
+                popupOne.classList.add('active')
+                document.querySelector("body").style.overflow = "hidden";
+                setTitle.innerText = getTitle.innerText
+                setSubTitle.innerText = getSubTitle.innerText
+                setDes.innerText = getDes.innerText
+            }
+
+        })
+
+        closePopupOne.onclick = function () {
+            popupOne.classList.remove('active')
+            document.querySelector("body").style.overflow = "auto";
+        }
+
+        overlayPopup.onclick = function () {
+            popupOne.classList.remove('active')
+            document.querySelector("body").style.overflow = "auto";
+        };
+
+
+
+    }
+
 
     // xử lý sự kiện để show sub menu
     function handleShowSubMenu() {
@@ -89,6 +130,27 @@ document.addEventListener("DOMContentLoaded", function () {
                 $(".fancybox-full a").fancybox();
             });
         }
+        // Fancybox.bind("[data-fancybox='gallery']", {
+        //     on: {
+        //         reveal: (fancybox, slide) => {
+        //             if (slide.$el) {
+        //                 const video = slide.$el.querySelector('video');
+        //                 if (video) {
+        //                     video.play();
+        //                 }
+        //             }
+        //         },
+        //         closing: (fancybox, slide) => {
+        //             if (slide.$el) {
+        //                 const video = slide.$el.querySelector('video');
+        //                 if (video) {
+        //                     video.pause();
+        //                 }
+        //             }
+        //         }
+        //     }
+        // });
+
     }
 
     // Khởi tạo sticky content 
@@ -215,6 +277,7 @@ document.addEventListener("DOMContentLoaded", function () {
         handleVideo169();
         initFancybox();
         initStickyContent();
+        handleShowPopupOne();
         // slide
         initSliderTwoItemsTwoRow();
         initSliderThreeItems();

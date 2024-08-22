@@ -15,7 +15,23 @@
     </head>
 
     <body>
-        
+        <!-- popup one -->
+        <div class="popup popup-one js__popUpOne">
+            <div class="overlay js__overlay"></div>
+            <div class="popup__container w-900 scroll">
+                <div class="text-info">
+                    <div class="text-info__close js__closePopUp">
+                        <img src="./images/svg/close_gray.svg" alt="">
+                    </div>
+                    <h3 class="text-info__title fs-24 fw-600 mb-8 js__titlePopUpOne">Ông Nguyễn Thanh Lâm</h3>
+                    <h4 class="text-info__subtitle fs-16 js__subTitlePopUpOne">Thứ trưởng Bộ Thông tin và Truyền thông</h4>
+                    <p class="text-info__des fs-16 font-arial lh-160 mt-30 text-gray-22 js__descriptionPopUpOne">
+                        Có 22 năm hoạt động trong lĩnh vực truyền hình, nguyên là phóng viên, người dẫn chương trình thời sự của Đài Truyền hình Việt Nam. Trải qua nhiều vị trí công tác như Phó Trưởng Ban Thời sự, Đài Truyền hình Việt Nam, Trưởng Ban Biên tập Truyền hình cáp,
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- end popup one -->
         <!-- header -->
         <header id="header" class="header relative w-wrapper">
             <div class="header-container w-1750 d-3xl-flex items-center justify-between py-20">
@@ -182,77 +198,72 @@
 
                 <!-- secondary -->
                 <div class="block-secondary w-900 relative z-10" id="el1">
-                    <h2 class="heading-one">Chủ trì diễn đàn</h2>
+                    <h2 class="heading-one"><a href="#">Chủ trì diễn đàn</a></h2>
                     <div class="articles d-3xl-grid col-3 d-sm-block mb-30">
                         <!-- artcile -->
-                        <div class="article">
+                        <div class="article js__showPopupOne hover-change-color">
                             <!-- img -->
                             <div class="article-img">
-                                <a href="#" class="image-wrapper-120" title="">
+                                <div class="image-wrapper-120" title="">
                                     <img loading="lazy" class="" src="./images/2.jpg" alt="">
-                                </a>                            
+                                </div>  
                             </div>
                             <!-- end img -->
                             <!-- text -->
                             <div class="article-text text-center">
-                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600"><a href="#">Nhà báo Phan Mạnh Hùng</a></h3>
-                                <div class="article-des text-white fs-15 mt-4">
+                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600 js__getTitle">Nhà báo Phan Mạnh Hùng</h3>
+                                <div class="article-subTitle text-white fs-15 mt-4 js__getSubTitle">
                                     <p>Phó Tổng Giám đốc Đài Tiếng nói Việt Nam</p>
                                 </div>
+                                <p class="article-des js__getDescription d-3xl-none">Có 22 năm hoạt động trong lĩnh vực truyền hình, nguyên là phóng viên, người dẫn chương trình thời sự của Đài Truyền hình Việt Nam. Trải qua nhiều vị trí công tác như Phó Trưởng Ban Thời sự, Đài Truyền hình Việt Nam, Trưởng Ban Biên tập Truyền hình cáp,</p>
                             </div>
                             <!-- end text -->
                         </div>
                         <!-- end artcile -->
                         <!-- artcile -->
-                        <div class="article">
+                        <div class="article js__showPopupOne hover-change-color">
                             <!-- img -->
                             <div class="article-img">
-                                <a href="#" class="image-wrapper-120" title="">
+                                <div class="image-wrapper-120" title="">
                                     <img loading="lazy" class="" src="./images/2.jpg" alt="">
-                                </a>                            
+                                </div>  
                             </div>
                             <!-- end img -->
                             <!-- text -->
                             <div class="article-text text-center">
-                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600"><a href="#">Nhà báo Phan Mạnh Hùng</a></h3>
-                                <div class="article-des text-white fs-15 mt-4">
-                                    <p>Phó Tổng Giám đốc Đài Tiếng nói Việt Nam</p>
+                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600 js__getTitle">Ông Nguyễn Thanh Lâm
+                                </h3>
+                                <div class="article-subTitle text-white fs-15 mt-4 js__getSubTitle">
+                                    <p>Thứ trưởng Bộ Thông tin và Truyền thông</p>
                                 </div>
+                                <p class="article-des js__getDescription d-3xl-none">Có 22 năm hoạt động trong lĩnh vực truyền hình, nguyên là phóng viên, người dẫn chương trình thời sự của Đài Truyền hình Việt Nam. Trải qua nhiều vị trí công tác như Phó Trưởng Ban Thời sự, Đài Truyền hình Việt Nam, Trưởng Ban Biên tập Truyền hình cáp,</p>
                             </div>
                             <!-- end text -->
                         </div>
                         <!-- end artcile -->
                         <!-- artcile -->
-                        <div class="article">
+                        <div class="article js__showPopupOne hover-change-color">
                             <!-- img -->
                             <div class="article-img">
-                                <a href="#" class="image-wrapper-120" title="">
+                                <div class="image-wrapper-120" title="">
                                     <img loading="lazy" class="" src="./images/2.jpg" alt="">
-                                </a>                            
+                                </div>  
                             </div>
                             <!-- end img -->
                             <!-- text -->
                             <div class="article-text text-center">
-                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600"><a href="#">Nhà báo Phan Mạnh Hùng</a></h3>
-                                <div class="article-des text-white fs-15 mt-4">
-                                    <p>Phó Tổng Giám đốc Đài Tiếng nói Việt Nam</p>
+                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600 js__getTitle">Nhà báo Phan Mạnh Hùng</h3>
+                                <div class="article-subTitle text-white fs-15 mt-4 js__getSubTitle">
+                                    <p>Nhà báo Nguyễn Đức Lợi</p>
                                 </div>
+                                <p class="article-des js__getDescription d-3xl-none">Phó Chủ tịch thường trực Hội Nhà báo Việt Nam</p>
                             </div>
                             <!-- end text -->
                         </div>
                         <!-- end artcile -->
+                        
                     </div>
-
-                    <div class="text-info bg-white">
-                        <div class="text-info__close">
-                            <img src="./images/svg/close_gray.svg" alt="">
-                        </div>
-                        <h3 class="text-info__title fs-24 fw-600 mb-8">Ông Nguyễn Thanh Lâm</h3>
-                        <h4 class="text-info__subtitle fs-16">Thứ trưởng Bộ Thông tin và Truyền thông</h4>
-                        <p class="text-info__des fs-16 font-arial lh-160 mt-30 text-gray-22">
-                            Có 22 năm hoạt động trong lĩnh vực truyền hình, nguyên là phóng viên, người dẫn chương trình thời sự của Đài Truyền hình Việt Nam. Trải qua nhiều vị trí công tác như Phó Trưởng Ban Thời sự, Đài Truyền hình Việt Nam, Trưởng Ban Biên tập Truyền hình cáp,
-                        </p>
-                    </div>
+                    
                 </div>
                 <!-- end secondary -->
 
@@ -403,7 +414,9 @@
                                 <div class="swiper-slide">
                                     <div class="article-img">
                                         <div class="image-wrapper">
-                                            <img loading="lazy" class="" src="./images/2.jpg" alt="">
+                                            <a data-fancybox="gallery" href="./images/2.jpg" data-caption="VNG từng dự kiến IPO tại Mỹ. Ảnh Vneconomy">
+                                                <img loading="lazy" class="" src="./images/2.jpg" alt="">
+                                            </a>
                                         </div>                            
                                     </div>
                                 </div>
@@ -412,7 +425,9 @@
                                 <div class="swiper-slide">
                                     <div class="article-img">
                                         <div class="image-wrapper">
-                                            <img loading="lazy" class="" src="./images/2.jpg" alt="">
+                                            <a data-fancybox="gallery" href="./videos/KR_Ver9_sub.mp4" data-caption="VNG từng dự kiến IPO tại Mỹ. Ảnh Vneconomy">
+                                                <img loading="lazy" class="" src="./images/banner-4.jpg" alt="">
+                                            </a>
                                         </div>                            
                                     </div>
                                 </div>
@@ -421,7 +436,9 @@
                                 <div class="swiper-slide">
                                     <div class="article-img">
                                         <div class="image-wrapper">
-                                            <img loading="lazy" class="" src="./images/2.jpg" alt="">
+                                            <a data-fancybox="gallery" href="./images/3.jpg" data-caption="VNG từng dự kiến IPO tại Mỹ. Ảnh Vneconomy">
+                                                <img loading="lazy" class="" src="./images/3.jpg" alt="">
+                                            </a>
                                         </div>                            
                                     </div>
                                 </div>
@@ -430,7 +447,21 @@
                                 <div class="swiper-slide">
                                     <div class="article-img">
                                         <div class="image-wrapper">
-                                            <img loading="lazy" class="" src="./images/2.jpg" alt="">
+                                            <a data-fancybox="gallery" href="./images/2.jpg" data-caption="VNG từng dự kiến IPO tại Mỹ. Ảnh Vneconomy">
+                                                <img loading="lazy" class="" src="./images/2.jpg" alt="">
+                                            </a>
+                                        </div>                            
+                                    </div>
+                                </div>
+                                <!-- end slide -->
+                                
+                                <!-- slide -->
+                                <div class="swiper-slide">
+                                    <div class="article-img">
+                                        <div class="image-wrapper">
+                                            <a data-fancybox="gallery" href="./images/2.jpg" data-caption="VNG từng dự kiến IPO tại Mỹ. Ảnh Vneconomy">
+                                                <img loading="lazy" class="" src="./images/2.jpg" alt="">
+                                            </a>
                                         </div>                            
                                     </div>
                                 </div>
@@ -439,16 +470,9 @@
                                 <div class="swiper-slide">
                                     <div class="article-img">
                                         <div class="image-wrapper">
-                                            <img loading="lazy" class="" src="./images/2.jpg" alt="">
-                                        </div>                            
-                                    </div>
-                                </div>
-                                <!-- end slide -->
-                                <!-- slide -->
-                                <div class="swiper-slide">
-                                    <div class="article-img">
-                                        <div class="image-wrapper">
-                                            <img loading="lazy" class="" src="./images/2.jpg" alt="">
+                                            <a data-fancybox="gallery" href="./images/3.jpg" data-caption="VNG từng dự kiến IPO tại Mỹ. Ảnh Vneconomy">
+                                                <img loading="lazy" class="" src="./images/3.jpg" alt="">
+                                            </a>
                                         </div>                            
                                     </div>
                                 </div>
@@ -463,7 +487,7 @@
 
                 <!-- quinary -->
                 <div class="block-quinary w-1140 relative z-10" id="el4">
-                    <h2 class="heading-one">Tin tức</h2>
+                    <h2 class="heading-one"><a href="#">Tin tức</a></h2>
                     <!-- pc -->
                     <div class="d-3xl-block d-sm-none">
                         <div class="block-quinary__content d-3xl-grid col-4">
@@ -875,162 +899,195 @@
 
                 <!-- senary -->
                 <div class="block-senary w-1140 relative z-10" id="el5">
-                    <h2 class="heading-one">Khách mời</h2>
+                    <h2 class="heading-one"><a href="#">Khách mời</a></h2>
                     <div class="block-senary__content d-3xl-grid col-4">
                         <!-- article -->
-                        <div class="article">
+                        <div class="article js__showPopupOne hover-change-color">
                             <!-- img -->
                             <div class="article-img">
-                                <a href="#" class="image-wrapper-full" title="">
+                                <div class="image-wrapper-full" title="">
                                     <img loading="lazy" class="" src="./images/2.jpg" alt="">
-                                </a>                            
+                                </div>                            
                             </div>
                             <!-- end img -->
                             <!-- text -->
                             <div class="article-text text-center">
-                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600"><a href="#">Nhà báo Phan Mạnh Hùng</a></h3>
-                                <div class="article-des text-white fs-15 mt-4">
+                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600 js__getTitle">Nhà báo Phan Mạnh Hùng</h3>
+                                <div class="article-subTitle text-white fs-15 mt-4 js__getSubTitle">
                                     <p>Phó Tổng Giám đốc Đài Tiếng nói Việt Nam</p>
+                                </div>
+                                <div class="article-des text-white fs-15 mt-4 d-3xl-none js__getDescription">
+                                    <p>Có 22 năm hoạt động trong lĩnh vực truyền hình, nguyên là phóng viên, người dẫn chương trình thời sự của Đài Truyền hình Việt Nam. Trải qua nhiều vị trí công tác như Phó Trưởng Ban Thời sự, Đài Truyền hình Việt Nam, Trưởng Ban Biên tập Truyền hình cáp,</p>
                                 </div>
                             </div>
                             <!-- end text -->
                         </div>
                         <!-- end article -->
                         <!-- article -->
-                        <div class="article">
+                        <div class="article js__showPopupOne hover-change-color">
                             <!-- img -->
                             <div class="article-img">
-                                <a href="#" class="image-wrapper-full" title="">
+                                <div class="image-wrapper-full" title="">
                                     <img loading="lazy" class="" src="./images/2.jpg" alt="">
-                                </a>                            
+                                </div>                            
                             </div>
                             <!-- end img -->
                             <!-- text -->
                             <div class="article-text text-center">
-                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600"><a href="#">Nhà báo Phan Mạnh Hùng</a></h3>
-                                <div class="article-des text-white fs-15 mt-4">
+                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600 js__getTitle">Nhà báo Phan Mạnh Hùng</h3>
+                                <div class="article-subTitle text-white fs-15 mt-4 js__getSubTitle">
                                     <p>Phó Tổng Giám đốc Đài Tiếng nói Việt Nam</p>
+                                </div>
+                                <div class="article-des text-white fs-15 mt-4 d-3xl-none js__getDescription">
+                                    <p>Có 22 năm hoạt động trong lĩnh vực truyền hình, nguyên là phóng viên, người dẫn chương trình thời sự của Đài Truyền hình Việt Nam. Trải qua nhiều vị trí công tác như Phó Trưởng Ban Thời sự, Đài Truyền hình Việt Nam, Trưởng Ban Biên tập Truyền hình cáp,</p>
                                 </div>
                             </div>
                             <!-- end text -->
                         </div>
                         <!-- end article -->
                         <!-- article -->
-                        <div class="article">
+                        <div class="article js__showPopupOne hover-change-color">
                             <!-- img -->
                             <div class="article-img">
-                                <a href="#" class="image-wrapper-full" title="">
+                                <div class="image-wrapper-full" title="">
                                     <img loading="lazy" class="" src="./images/2.jpg" alt="">
-                                </a>                            
+                                </div>                            
                             </div>
                             <!-- end img -->
                             <!-- text -->
                             <div class="article-text text-center">
-                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600"><a href="#">Nhà báo Phan Mạnh Hùng</a></h3>
-                                <div class="article-des text-white fs-15 mt-4">
+                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600 js__getTitle">Nhà báo Phan Mạnh Hùng</h3>
+                                <div class="article-subTitle text-white fs-15 mt-4 js__getSubTitle">
                                     <p>Phó Tổng Giám đốc Đài Tiếng nói Việt Nam</p>
+                                </div>
+                                <div class="article-des text-white fs-15 mt-4 d-3xl-none js__getDescription">
+                                    <p>Có 22 năm hoạt động trong lĩnh vực truyền hình, nguyên là phóng viên, người dẫn chương trình thời sự của Đài Truyền hình Việt Nam. Trải qua nhiều vị trí công tác như Phó Trưởng Ban Thời sự, Đài Truyền hình Việt Nam, Trưởng Ban Biên tập Truyền hình cáp,</p>
                                 </div>
                             </div>
                             <!-- end text -->
                         </div>
                         <!-- end article -->
                         <!-- article -->
-                        <div class="article">
+                        <div class="article js__showPopupOne hover-change-color">
                             <!-- img -->
                             <div class="article-img">
-                                <a href="#" class="image-wrapper-full" title="">
+                                <div class="image-wrapper-full" title="">
                                     <img loading="lazy" class="" src="./images/2.jpg" alt="">
-                                </a>                            
+                                </div>                            
                             </div>
                             <!-- end img -->
                             <!-- text -->
                             <div class="article-text text-center">
-                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600"><a href="#">Nhà báo Phan Mạnh Hùng</a></h3>
-                                <div class="article-des text-white fs-15 mt-4">
+                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600 js__getTitle">Nhà báo Phan Mạnh Hùng</h3>
+                                <div class="article-subTitle text-white fs-15 mt-4 js__getSubTitle">
                                     <p>Phó Tổng Giám đốc Đài Tiếng nói Việt Nam</p>
+                                </div>
+                                <div class="article-des text-white fs-15 mt-4 d-3xl-none js__getDescription">
+                                    <p>Có 22 năm hoạt động trong lĩnh vực truyền hình, nguyên là phóng viên, người dẫn chương trình thời sự của Đài Truyền hình Việt Nam. Trải qua nhiều vị trí công tác như Phó Trưởng Ban Thời sự, Đài Truyền hình Việt Nam, Trưởng Ban Biên tập Truyền hình cáp,</p>
                                 </div>
                             </div>
                             <!-- end text -->
                         </div>
                         <!-- end article -->
                         <!-- article -->
-                        <div class="article">
+                        <div class="article js__showPopupOne hover-change-color">
                             <!-- img -->
                             <div class="article-img">
-                                <a href="#" class="image-wrapper-full" title="">
+                                <div class="image-wrapper-full" title="">
                                     <img loading="lazy" class="" src="./images/2.jpg" alt="">
-                                </a>                            
+                                </div>                            
                             </div>
                             <!-- end img -->
                             <!-- text -->
                             <div class="article-text text-center">
-                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600"><a href="#">Nhà báo Phan Mạnh Hùng</a></h3>
-                                <div class="article-des text-white fs-15 mt-4">
+                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600 js__getTitle">Nhà báo Phan Mạnh Hùng</h3>
+                                <div class="article-subTitle text-white fs-15 mt-4 js__getSubTitle">
                                     <p>Phó Tổng Giám đốc Đài Tiếng nói Việt Nam</p>
+                                </div>
+                                <div class="article-des text-white fs-15 mt-4 d-3xl-none js__getDescription">
+                                    <p>Có 22 năm hoạt động trong lĩnh vực truyền hình, nguyên là phóng viên, người dẫn chương trình thời sự của Đài Truyền hình Việt Nam. Trải qua nhiều vị trí công tác như Phó Trưởng Ban Thời sự, Đài Truyền hình Việt Nam, Trưởng Ban Biên tập Truyền hình cáp,</p>
                                 </div>
                             </div>
                             <!-- end text -->
                         </div>
                         <!-- end article -->
                         <!-- article -->
-                        <div class="article">
+                        <div class="article js__showPopupOne hover-change-color">
                             <!-- img -->
                             <div class="article-img">
-                                <a href="#" class="image-wrapper-full" title="">
+                                <div class="image-wrapper-full" title="">
                                     <img loading="lazy" class="" src="./images/2.jpg" alt="">
-                                </a>                            
+                                </div>                            
                             </div>
                             <!-- end img -->
                             <!-- text -->
                             <div class="article-text text-center">
-                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600"><a href="#">Nhà báo Phan Mạnh Hùng</a></h3>
-                                <div class="article-des text-white fs-15 mt-4">
+                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600 js__getTitle">Nhà báo Phan Mạnh Hùng</h3>
+                                <div class="article-subTitle text-white fs-15 mt-4 js__getSubTitle">
                                     <p>Phó Tổng Giám đốc Đài Tiếng nói Việt Nam</p>
+                                </div>
+                                <div class="article-des text-white fs-15 mt-4 d-3xl-none js__getDescription">
+                                    <p>Có 22 năm hoạt động trong lĩnh vực truyền hình, nguyên là phóng viên, người dẫn chương trình thời sự của Đài Truyền hình Việt Nam. Trải qua nhiều vị trí công tác như Phó Trưởng Ban Thời sự, Đài Truyền hình Việt Nam, Trưởng Ban Biên tập Truyền hình cáp,</p>
                                 </div>
                             </div>
                             <!-- end text -->
                         </div>
                         <!-- end article -->
                         <!-- article -->
-                        <div class="article">
+                        <div class="article js__showPopupOne hover-change-color">
                             <!-- img -->
                             <div class="article-img">
-                                <a href="#" class="image-wrapper-full" title="">
+                                <div class="image-wrapper-full" title="">
                                     <img loading="lazy" class="" src="./images/2.jpg" alt="">
-                                </a>                            
+                                </div>                            
                             </div>
                             <!-- end img -->
                             <!-- text -->
                             <div class="article-text text-center">
-                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600"><a href="#">Nhà báo Phan Mạnh Hùng</a></h3>
-                                <div class="article-des text-white fs-15 mt-4">
+                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600 js__getTitle">Nhà báo Phan Mạnh Hùng</h3>
+                                <div class="article-subTitle text-white fs-15 mt-4 js__getSubTitle">
                                     <p>Phó Tổng Giám đốc Đài Tiếng nói Việt Nam</p>
+                                </div>
+                                <div class="article-des text-white fs-15 mt-4 d-3xl-none js__getDescription">
+                                    <p>Có 22 năm hoạt động trong lĩnh vực truyền hình, nguyên là phóng viên, người dẫn chương trình thời sự của Đài Truyền hình Việt Nam. Trải qua nhiều vị trí công tác như Phó Trưởng Ban Thời sự, Đài Truyền hình Việt Nam, Trưởng Ban Biên tập Truyền hình cáp,</p>
                                 </div>
                             </div>
                             <!-- end text -->
                         </div>
                         <!-- end article -->
                         <!-- article -->
-                        <div class="article">
+                        <div class="article js__showPopupOne hover-change-color">
                             <!-- img -->
                             <div class="article-img">
-                                <a href="#" class="image-wrapper-full" title="">
+                                <div class="image-wrapper-full" title="">
                                     <img loading="lazy" class="" src="./images/2.jpg" alt="">
-                                </a>                            
+                                </div>                            
                             </div>
                             <!-- end img -->
                             <!-- text -->
                             <div class="article-text text-center">
-                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600"><a href="#">Nhà báo Phan Mạnh Hùng</a></h3>
-                                <div class="article-des text-white fs-15 mt-4">
+                                <h3 class="article-title text-cyan-18 fs-18 lh-160 fw-600 js__getTitle">Nhà báo Phan Mạnh Hùng</h3>
+                                <div class="article-subTitle text-white fs-15 mt-4 js__getSubTitle">
                                     <p>Phó Tổng Giám đốc Đài Tiếng nói Việt Nam</p>
+                                </div>
+                                <div class="article-des text-white fs-15 mt-4 d-3xl-none js__getDescription">
+                                    <p>Có 22 năm hoạt động trong lĩnh vực truyền hình, nguyên là phóng viên, người dẫn chương trình thời sự của Đài Truyền hình Việt Nam. Trải qua nhiều vị trí công tác như Phó Trưởng Ban Thời sự, Đài Truyền hình Việt Nam, Trưởng Ban Biên tập Truyền hình cáp,</p>
                                 </div>
                             </div>
                             <!-- end text -->
                         </div>
                         <!-- end article -->
+                        
+                        
                     </div>
                     
+                    <!-- see more -->
+                    <div class="see-more d-3xl-flex items-center justify-center mt-24">
+                        <a href="#" class="see-more__link d-3xl-flex items-center fs-14 text-white fw-600">
+                            Xem thêm
+                            <img src="./images/svg/arrow-next-cyan.svg" alt="" class="ml-12 flex-0">
+                        </a>
+                    </div>
                     <!-- end see more -->
                 </div> 
                 <!-- end senary -->

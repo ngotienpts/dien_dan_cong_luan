@@ -23,7 +23,7 @@
 @font-face {
     font-family: "Helvetica Neue";
     font-style: normal;
-    font-weight: 600;
+    font-weight: bold;
     src: url("../fonts/helvetica-neue/HELVETICA-NEUE-BOLD_0.TTF")
         format("truetype");
 }
@@ -117,6 +117,9 @@ img {
 .font-arial {
     font-family: "Arial", sans-serif;
 }
+.font-merri {
+    font-family: "Merriweather", serif;
+}
 /*===========================================================================*/
 .w-1920 {
     max-width: 1920px;
@@ -132,6 +135,10 @@ img {
 }
 .w-900 {
     max-width: 900px;
+    margin: 0 auto;
+}
+.w-790 {
+    max-width: 790px;
     margin: 0 auto;
 }
 .w-full {
@@ -303,11 +310,20 @@ img {
 .text-gray-44 {
     color: #444;
 }
+.text-gray-66 {
+    color: #666;
+}
 .text-gray-d4 {
     color: #d4d4d5;
 }
+.text-gray-e0 {
+    color: #e0e0e0;
+}
 .text-cyan-18 {
     color: #18F2BF;
+}
+.text-blue-35 {
+    color: #35639F;
 }
 .text-gradient-cyan {
     background: #18F2BF;
@@ -1078,4 +1094,8 @@ img {
 }
 .border-gray-e5-b {
     border-bottom: 1px solid #e5e5e5;
+}
+video {
+    aspect-ratio: 16 / 9;
+    height: auto;
 }

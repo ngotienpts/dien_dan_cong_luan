@@ -17,6 +17,18 @@
     font-weight: 600;
     text-align: left;
 }
+.heading-three {
+    color: #EB242C;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e5e5e5;
+    span {
+        display: inline-block;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #EB242C;
+    }
+}
 .swiper-button-next, .swiper-rtl .swiper-button-prev,
 .swiper-button-prev, .swiper-rtl .swiper-button-next {
     width: 71px;
@@ -37,6 +49,77 @@
         &:hover {
             background-color: #0c0a24;
         }
+    }
+}
+.popup {
+    position: fixed;
+    inset: 0;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    &.active {
+        display: flex;
+        .overlay {
+            opacity: 1;
+            visibility: visible;
+            z-index: 99;
+        }
+    }
+    &__container {
+        width: 100%;
+        max-height: calc(100vh - 200px);
+        overflow: auto;
+        position: relative;
+        z-index: 100;
+    }
+    .text-info {
+        padding: 32px;
+        position: relative;
+        background-color: #EBF1FF;
+
+        &__close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+
+            img {
+                width: 20px;
+                height: auto;
+            }
+        }
+    }
+}
+.hover-change-color {
+    cursor: pointer;
+    &:hover {
+        .image-wrapper-120::before,
+        .image-wrapper::before,
+        .image-wrapper-full::before,
+        .image-wrapper-150::before {
+            display: block;
+        }
+    }
+    .image-wrapper-120,
+    .image-wrapper,
+    .image-wrapper-full,
+    .image-wrapper-150 {
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: linear-gradient(310deg, #39B44C 0%, #FFB321 100%, #C5FF21 100%);
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.5;
+            display: none;
+        }
+        
     }
 }
 .block {
@@ -200,6 +283,9 @@
         .articles {
             grid-gap: 40px;
         }
+        .article {
+            
+        }
         .article-img {
             position: relative;
             padding: 15px;
@@ -225,6 +311,7 @@
                 background-size: contain;
                 background-position: right bottom;
             }
+           
         }
         .article-text {
             position: relative;
@@ -333,6 +420,9 @@
         }
         &__small {
             grid-gap: 32px;
+        }
+        &__articles {
+            max-width: 790px;
         }
     }
     &-senary {
