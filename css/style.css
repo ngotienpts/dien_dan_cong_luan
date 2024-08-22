@@ -132,7 +132,7 @@ table {
   font-family: "Helvetica Neue";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/Helvetica Neue/helveticaneuelight.ttf") format("truetype");
+  src: url("../fonts/helvetica-neue/helveticaneuelight.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
