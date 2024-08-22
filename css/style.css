@@ -2013,6 +2013,10 @@ video {
 .detail-primary {
   padding-top: 100px;
 }
+.detail-primary .breadcrumb-newspaper {
+  flex-wrap: wrap;
+  grid-gap: 10px 30px;
+}
 .detail-primary .breadcrumb-item {
   font-size: 16px;
   position: relative;
@@ -2708,6 +2712,15 @@ video {
 
   .detail-primary {
     padding-top: 60px;
+  }
+  .detail-primary .breadcrumb-newspaper {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    grid-gap: 0;
+    overflow: auto;
+  }
+  .detail-primary .breadcrumb-item {
+    margin-right: 30px;
   }
 
   .detail-tags {

@@ -1,6 +1,9 @@
 .detail-primary {
     padding-top: 100px;
-    
+    .breadcrumb-newspaper {
+        flex-wrap: wrap;
+        grid-gap: 10px 30px;
+    }
     .breadcrumb-item {
         font-size: 16px;
         position: relative;

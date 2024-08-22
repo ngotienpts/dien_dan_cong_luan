@@ -469,6 +469,15 @@
     // --------------------------------------------------------------------detail
     .detail-primary {
         padding-top: 60px;
+        .breadcrumb-newspaper {
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            grid-gap: 0;
+            overflow: auto;
+        }
+        .breadcrumb-item {
+            margin-right: 30px;
+        }
     }
     .detail-tags {
         flex-wrap: nowrap;
